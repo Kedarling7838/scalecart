@@ -5,7 +5,7 @@ import {
 } from '@/components/ui/sidebar';
 import {
   LayoutDashboard, ShoppingBag, Monitor, Zap, Network, DollarSign,
-  BarChart3, Layers, ShoppingCart, LogIn, Shield, Package,
+  BarChart3, Layers, ShoppingCart, LogIn, Shield, Package, Heart,
 } from 'lucide-react';
 
 const navGroups = [
@@ -27,6 +27,7 @@ const navGroups = [
       { title: 'Products', url: '/products', icon: ShoppingBag },
       { title: 'Cart', url: '/cart', icon: ShoppingCart },
       { title: 'Orders', url: '/orders', icon: Package },
+      { title: 'Wishlist', url: '/wishlist', icon: Heart },
     ],
   },
   {
