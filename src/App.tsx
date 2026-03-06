@@ -13,10 +13,14 @@ import CostOptimizationPage from "./pages/CostOptimizationPage";
 import MultiCloudPage from "./pages/MultiCloudPage";
 import StartupAnalyticsPage from "./pages/StartupAnalyticsPage";
 import ProductsPage from "./pages/ProductsPage";
+import ProductDetailPage from "./pages/ProductDetailPage";
 import CartPage from "./pages/CartPage";
 import OrdersPage from "./pages/OrdersPage";
 import LoginPage from "./pages/LoginPage";
 import AdminPage from "./pages/AdminPage";
+import PaymentPage from "./pages/PaymentPage";
+import OrderConfirmationPage from "./pages/OrderConfirmationPage";
+import WishlistPage from "./pages/WishlistPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,10 +42,14 @@ const App = () => (
               <Route path="/multi-cloud" element={<MultiCloudPage />} />
               <Route path="/analytics" element={<StartupAnalyticsPage />} />
               <Route path="/products" element={<ProductsPage />} />
+              <Route path="/product/:id" element={<ProductDetailPage />} />
               <Route path="/cart" element={<CartPage />} />
               <Route path="/orders" element={<OrdersPage />} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/admin" element={<AdminPage />} />
+              <Route path="/payment" element={<PaymentPage />} />
+              <Route path="/order-confirmation/:id" element={<OrderConfirmationPage />} />
+              <Route path="/wishlist" element={<WishlistPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </DashboardLayout>
